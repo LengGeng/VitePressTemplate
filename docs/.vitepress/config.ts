@@ -163,6 +163,10 @@ export default defineConfig({
     siteTitle: 'WebSite Title',
     nav,
     sidebar,
+    outline: {
+      level: 'deep',
+      label: '目录'
+    },
     docFooter: {prev: '上一篇', next: '下一篇'},
     socialLinks: [
       {icon: 'github', link: 'https://github.com/vuejs/vitepress'},
