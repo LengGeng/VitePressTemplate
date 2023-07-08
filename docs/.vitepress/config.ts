@@ -64,5 +64,8 @@ export default defineConfig({
       pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
+    lastUpdated: {
+      text: '上次更新:'
+    },
   }
 })
