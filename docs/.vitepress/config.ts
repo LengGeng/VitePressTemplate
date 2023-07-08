@@ -36,6 +36,74 @@ const nav: DefaultTheme.NavItem[] = [
   }
 ];
 
+// 全局侧边菜单配置
+const global_sidebar: DefaultTheme.Sidebar = [
+  {
+    text: "入门",
+    items: [
+      {text: "入门指南", link: "/入门/"}
+    ]
+  },
+  {
+    text: "配置",
+    items: [
+      {text: "基础配置", link: "/配置/基础配置"},
+      {text: "详细配置", link: "/配置/详细配置"},
+      {text: "进阶配置", link: "/配置/进阶配置"}
+    ]
+  },
+  {
+    text: "模板",
+    items: [
+      {
+        text: "模板一",
+        items: [
+          {text: "文本", link: "/模板/模板一/文本"},
+          {text: "按钮", link: "/模板/模板一/按钮"},
+          {text: "布局", link: "/模板/模板一/布局"}
+        ]
+      },
+      {
+        text: "模板二",
+        items: [
+          {text: "文本", link: "/模板/模板二/文本"},
+          {text: "按钮", link: "/模板/模板二/按钮"},
+          {text: "布局", link: "/模板/模板二/布局"}
+        ]
+      }
+    ]
+  },
+  {
+    text: "一级标题",
+    items: [
+      {
+        text: "二级标题",
+        items: [
+          {
+            text: "三级标题",
+            items: [
+              {
+                text: "四级标题",
+                items: [
+                  {
+                    text: "五级标题",
+                    items: [
+                      {
+                        text: "六级标题",
+                        items: []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
 export default defineConfig({
   title: 'VitePress Template',
   description: 'VitePress 项目模板，包含一些基础配置。你可以通过它快速创建一个 VitePress 项目。',
@@ -46,6 +114,7 @@ export default defineConfig({
     logo: '/logo.svg',
     siteTitle: 'WebSite Title',
     nav,
+    sidebar: global_sidebar,
     socialLinks: [
       {icon: 'github', link: 'https://github.com/vuejs/vitepress'},
       {icon: 'twitter', link: '...'},
