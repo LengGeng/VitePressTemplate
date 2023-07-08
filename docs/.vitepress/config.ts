@@ -42,7 +42,8 @@ const global_sidebar: DefaultTheme.Sidebar = [
     text: "入门",
     items: [
       {text: "入门指南", link: "/入门/"}
-    ]
+    ],
+    collapsed: false
   },
   {
     text: "配置",
@@ -50,7 +51,8 @@ const global_sidebar: DefaultTheme.Sidebar = [
       {text: "基础配置", link: "/配置/基础配置"},
       {text: "详细配置", link: "/配置/详细配置"},
       {text: "进阶配置", link: "/配置/进阶配置"}
-    ]
+    ],
+    collapsed: true
   },
   {
     text: "模板",
@@ -71,7 +73,8 @@ const global_sidebar: DefaultTheme.Sidebar = [
           {text: "布局", link: "/模板/模板二/布局"}
         ]
       }
-    ]
+    ],
+    collapsed: true
   },
   {
     text: "一级标题",
@@ -100,7 +103,8 @@ const global_sidebar: DefaultTheme.Sidebar = [
           }
         ]
       }
-    ]
+    ],
+    collapsed: true
   }
 ];
 
