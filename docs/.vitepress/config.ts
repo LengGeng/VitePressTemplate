@@ -60,5 +60,9 @@ export default defineConfig({
       message: '底部信息',
       copyright: 'Copyright © 2023 XXX'
     },
+    editLink: {
+      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
   }
 })
