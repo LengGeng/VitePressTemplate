@@ -56,5 +56,9 @@ export default defineConfig({
         link: '...'
       }
     ],
+    footer: {
+      message: '底部信息',
+      copyright: 'Copyright © 2023 XXX'
+    },
   }
 })
