@@ -108,6 +108,50 @@ const global_sidebar: DefaultTheme.Sidebar = [
   }
 ];
 
+// 多侧边菜单配置
+const sidebar: DefaultTheme.Sidebar = {
+  "/入门": [
+    {
+      text: "入门",
+      items: [
+        {text: "入门指南", link: "/入门/"}
+      ],
+      collapsed: true
+    }
+  ],
+  "/配置": [
+    {
+      text: "配置",
+      items: [
+        {text: "基础配置", link: "/配置/基础配置"},
+        {text: "详细配置", link: "/配置/详细配置"},
+        {text: "进阶配置", link: "/配置/进阶配置"}
+      ],
+      collapsed: true
+    }
+  ],
+  "/模板": [
+    {
+      text: "模板一",
+      items: [
+        {text: "文本", link: "/模板/模板一/文本"},
+        {text: "按钮", link: "/模板/模板一/按钮"},
+        {text: "布局", link: "/模板/模板一/布局"}
+      ],
+      collapsed: true
+    },
+    {
+      text: "模板二",
+      items: [
+        {text: "文本", link: "/模板/模板二/文本"},
+        {text: "按钮", link: "/模板/模板二/按钮"},
+        {text: "布局", link: "/模板/模板二/布局"}
+      ],
+      collapsed: true
+    }
+  ]
+};
+
 export default defineConfig({
   title: 'VitePress Template',
   description: 'VitePress 项目模板，包含一些基础配置。你可以通过它快速创建一个 VitePress 项目。',
@@ -118,7 +162,7 @@ export default defineConfig({
     logo: '/logo.svg',
     siteTitle: 'WebSite Title',
     nav,
-    sidebar: global_sidebar,
+    sidebar,
     socialLinks: [
       {icon: 'github', link: 'https://github.com/vuejs/vitepress'},
       {icon: 'twitter', link: '...'},
